@@ -57,7 +57,7 @@ public class PedidoController {
         return service.detalhar(id);
     }
 
-    // ---------- ATUALIZAR (corpo igual ao create) ----------
+    // ---------- ATUALIZAR  ----------
     @PutMapping("/{id}")
     public PedidoDTO atualizar(@PathVariable Long id, @Valid @RequestBody PedidoCreateDTO body) {
         return service.atualizar(id, body);
