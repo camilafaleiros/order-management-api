@@ -23,7 +23,7 @@ public class ClienteController {
         this.service = service;
     }
 
-    // ---------- LISTAR (body enxuto + paginação nos headers) ----------
+    // ---------- LISTAR ----------
     @GetMapping
     public ResponseEntity<List<ClienteDTO>> listar(
             Pageable pageable,
