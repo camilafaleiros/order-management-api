@@ -24,7 +24,7 @@ public class ProdutoController {
         this.service = service;
     }
 
-    // ---------- LISTAR (body enxuto + paginação nos headers) ----------
+    // ---------- LISTAR  ----------
     @GetMapping
     public ResponseEntity<List<ProdutoDTO>> listar(
             Pageable pageable,
