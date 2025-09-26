@@ -22,7 +22,7 @@ public class PedidoController {
         this.service = service;
     }
 
-    // ---------- LISTAR (body enxuto + paginação nos headers) ----------
+    // ---------- LISTAR ----------
     @GetMapping
     public ResponseEntity<List<PedidoDTO>> listar(
             Pageable pageable,
